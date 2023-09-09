@@ -1,0 +1,172 @@
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    /* Center slide text vertically */
+    display: flex !important;
+    background-color: rgba(2,3,7,0.4);
+    align-items: center;
+} 
+
+.swiper-slide .home-text{
+  height:50%;
+  width:100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper-slide .home-text .btn{
+  width:fit-content;
+}
+.swiper-slide .home-text .play{
+  margin-left: auto;
+  border-radius: 50px;
+  height: 50px;
+  width:50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide .home-text .play:hover{
+  border: 3px solid #FF2C1F;
+}
+
+.swiper-slide img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    z-index: -1;
+}
+.swiper {
+    width: 100%;
+    height: 80vh;
+}
+
+/* Movies */
+
+.movies-container{
+  max-width: 968px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px,auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.box .box-img{
+  width: 100%;
+  height: 270px;
+}
+
+.box .box-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box .box-img img:hover{
+  transform: translateY(-10px);
+  transition: 0.2S all linear;
+}
+
+.box h3{
+  font-size: 0.9rem;
+}
+
+.box span{
+  font-size: 13px;
+}
+
+.commingSoon{
+  height:fit-content !important;
+  margin-top: 50px;
+  max-width: 968px;
+}
+
+.slide{
+  display: flex !important;
+  flex-direction: column !important;
+  gap:5px;
+  align-items: center !important;
+}
+
+.slide h3{
+  font-size: 0.9rem;
+}
+
+.slide span{
+  font-size: 13px;
+}
+
+.slide img{
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+  position: relative !important;
+}
+
+.slide .imageContainer{
+  max-height:100%;
+  width:100%;
+}
+
+.HomePage{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.newsletter{
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+}
+
+.newsletter h2{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.newsletter form{
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.newsletter form input{
+  border: none;
+  outline: none;
+}
+
+.newsletter form .email{
+  width: 280px;
+}
+
+.newsletter form input::placeholder{
+  color: var(--text-color);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.newsletter .btn{
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
